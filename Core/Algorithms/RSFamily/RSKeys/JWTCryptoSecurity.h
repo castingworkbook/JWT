@@ -21,8 +21,8 @@
 @end
 
 @interface JWTCryptoSecurity (KeysManipulation)
-+ (SecKeyRef)addKeyWithData:(NSData *)data asPublic:(BOOL)public tag:(NSString *)tag type:(NSString *)type error:(NSError *__autoreleasing*)error;
-+ (SecKeyRef)addKeyWithData:(NSData *)data asPublic:(BOOL)public tag:(NSString *)tag error:(NSError *__autoreleasing*)error;
++ (SecKeyRef)addKeyWithData:(NSData *)data asPublic:(BOOL)pub tag:(NSString *)tag type:(NSString *)type error:(NSError *__autoreleasing*)error;
++ (SecKeyRef)addKeyWithData:(NSData *)data asPublic:(BOOL)pub tag:(NSString *)tag error:(NSError *__autoreleasing*)error;
 + (SecKeyRef)keyByTag:(NSString *)tag error:(NSError *__autoreleasing*)error;
 + (void)removeKeyByTag:(NSString *)tag error:(NSError *__autoreleasing*)error;
 @end
